@@ -1,0 +1,34 @@
+[
+  {
+    "id": "as",
+    "title": "Ad Server"
+  },
+  {
+    "id": "am",
+    "title": "Ad Marketplace"
+  },
+  {
+    "id": "dar",
+    "title": "Dynamic Ad Refresh"
+  },
+  {
+    "id": "hb",
+    "title": "Header bidding"
+  },
+  {
+    "id": "vp",
+    "title": "Video Player"
+  },
+  {
+    "id": "cms",
+    "title": "Content Management System (CMS)"
+  },
+  {
+    "id": "sdk",
+    "title": "Mobile SDK"
+  },
+  {
+    "id": "dai",
+    "title": "SSAI/DAI"
+  }
+]

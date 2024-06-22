@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#even {
+  flex-direction: row-reverse;
+}
+
+#play,
+#xandr {
+  flex-direction: row-reverse;
+}
+
+#texteven {
+  text-align: end;
+}
+
+@media screen and (max-width: 767px) {
+  #even {
+    flex-direction: column-reverse;
+  }
+
+  #play,
+  #xandr {
+    flex-direction: column;
+  }
+
+  #texteven {
+    text-align: center;
+  }
+}
+
+.anime-div {
+  position: relative;
+  animation: moveUpDown 0.6s infinite alternate;
+}
+
+.hover-div:hover {
+  position: relative;
+  animation: moveUpDown 0.6s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+
+.close {
+  display: none;
+}
+
+.open {
+  display: block;
+  position: absolute;
+}
+
+.bg-color {
+  background: linear-gradient(70deg, #6754e9, #f277d9, #e41d1d, #d99e00);
+}
+
+.text-color {
+  background: -webkit-linear-gradient(
+    70deg,
+    #6754e9,
+    #f277d9,
+    #e41d1d,
+    #d99e00
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
