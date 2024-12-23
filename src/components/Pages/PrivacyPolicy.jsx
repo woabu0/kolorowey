@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
 
-export const Privacypage = () => {
+export const PrivacyPolicy = () => {
   return (
     <div>
       <Navbar />
@@ -10,7 +10,6 @@ export const Privacypage = () => {
         <h1 className="text-center text-[30px] text-[#be4dec] my-5">
           Privacy & Policy
         </h1>
-        <div></div>
         <p className="text-[12px] md:text-[16px]">
           This privacy policy applies to www.kolorowey.co, owned and operated by
           Kolorowey Media (“Kolorowey,” “we,” or “us”). We understand the
@@ -371,6 +370,7 @@ export const Privacypage = () => {
           info@kolorowey.co.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

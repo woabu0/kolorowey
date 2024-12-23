@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "RocknRoll One";
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
 #even {
   flex-direction: row-reverse;
 }

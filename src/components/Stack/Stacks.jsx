@@ -67,7 +67,7 @@ export const Stacks = () => {
             heading3="Customizable Timeout Management: "
             details3="Fine-tuned timeouts balance yield and latency, ensuring   optimal auction performance."
             heading4="Bring Your Own Demand (BYOD): "
-            details4="eamlessly integrate existing partners for enhanced   competition and revenue generation."
+            details4="Seamlessly integrate existing partners for enhanced   competition and revenue generation."
             heading5="Granular Control & Optimization: "
             details5="Selectively enable/disable bidders for maximum yield while   maintaining page performance."
             img="img/bidding.jpeg"
