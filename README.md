@@ -1,7 +1,7 @@
 # Kolorowey
 
 ## About the Project
-Kolorowey is a project aimed at [transforming the complexities of AdTech with innovative solutions for publishers, seamlessly boosting ad impressions, CPMs, and revenue growth.].
+Kolorowey is a project aimed at transforming the complexities of AdTech with innovative solutions for publishers, seamlessly boosting ad impressions, CPMs, and revenue growth.
 
 ## Features
 - Advanced Ad Optimization: Utilize cutting-edge algorithms to maximize ad impressions and CPMs for publishers.

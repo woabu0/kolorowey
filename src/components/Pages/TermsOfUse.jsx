@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 export const TermsOfUse = () => {
   return (
@@ -702,11 +703,12 @@ export const TermsOfUse = () => {
           <br />
           <b className="text-[16px] md:text-[20px]">PRIVACY POLICY</b> <br />
           <br />
-          Access to and use of this Website is subject to the Privacy Policy &
-          DPA . We respect your privacy. The Company will not intentionally
-          monitor or disclose any private messages or address information unless
-          required by law, regulation or court order. You agree to respect the
-          privacy and confidentiality of others.
+          Access to and use of this Website is subject to the{" "}
+          <Link to="/privacypage" className="text-[#be4dec]">Privacy Policy</Link> &{" "}
+          <Link to="/dpa" className="text-[#be4dec]">DPA</Link> . We respect your privacy. The Company will
+          not intentionally monitor or disclose any private messages or address
+          information unless required by law, regulation or court order. You
+          agree to respect the privacy and confidentiality of others.
           <br />
           <br />
           <b className="text-[16px] md:text-[20px]">DISCLAIMER</b> <br />
