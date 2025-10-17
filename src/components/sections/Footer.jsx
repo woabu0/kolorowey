@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export const Footer = () => {
@@ -27,7 +26,7 @@ export const Footer = () => {
                 target="_blank"
                 className="w-[60px] h-[60px] bg-white rounded-[50px] flex items-center justify-center cursor-pointer"
               >
-                <div className="w-[50px] h-[50px] rounded-[50px] border-[2px] border-[#be4dec] bg-white flex items-center justify-center hover:border-none transition-all">
+                <div className="w-[50px] h-[50px] rounded-[50px] border-2 border-[#be4dec] bg-white flex items-center justify-center hover:border-none transition-all">
                   <img
                     src="img/facebook.png"
                     alt="facebook"
@@ -40,7 +39,7 @@ export const Footer = () => {
                 target="_blank"
                 className="w-[60px] h-[60px] bg-white rounded-[50px] flex items-center justify-center cursor-pointer"
               >
-                <div className="w-[50px] h-[50px] rounded-[50px] border-[2px] border-[#be4dec] bg-white flex items-center justify-center hover:border-none transition-all">
+                <div className="w-[50px] h-[50px] rounded-[50px] border-2 border-[#be4dec] bg-white flex items-center justify-center hover:border-none transition-all">
                   <img
                     src="img/instagram.png"
                     alt="instagram"
@@ -53,7 +52,7 @@ export const Footer = () => {
                 target="_blank"
                 className="w-[60px] h-[60px] bg-white rounded-[50px] flex items-center justify-center cursor-pointer"
               >
-                <div className="w-[50px] h-[50px] rounded-[50px] border-[2px] border-[#be4dec] bg-white flex items-center justify-center hover:border-none transition-all">
+                <div className="w-[50px] h-[50px] rounded-[50px] border-2 border-[#be4dec] bg-white flex items-center justify-center hover:border-none transition-all">
                   <img
                     src="img/linkedin.png"
                     alt="linkedin"
@@ -61,33 +60,6 @@ export const Footer = () => {
                   />
                 </div>
               </a>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-col gap-3"
-          >
-            <h1 className="text-[22px]">
-              <u>Quick Links</u>
-            </h1>
-            <div className="flex flex-col gap-2">
-              <Link to="/terms-of-use">
-                <h5 className="cursor-pointer hover:scale-[1.15] transition-all">
-                  Terms of Use
-                </h5>
-              </Link>
-              <Link to="/dpa">
-                <h5 className="cursor-pointer hover:scale-[1.15] transition-all">
-                  DPA
-                </h5>
-              </Link>
-              <Link to="/privacypage">
-                <h5 className="cursor-pointer hover:scale-[1.15] transition-all">
-                  Privacy Policy
-                </h5>
-              </Link>
             </div>
           </motion.div>
           <motion.div
@@ -130,7 +102,10 @@ export const Footer = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p className="text-center">Copyright © Kolorowey Media Pvt. Ltd.</p>
+          <p className="text-center">
+            Copyright © {new Date().getFullYear()} Kolorowey Media Ltd. All
+            rights reserved.
+          </p>
         </motion.div>
       </div>
     </div>

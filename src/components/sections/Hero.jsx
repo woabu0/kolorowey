@@ -2,9 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-export const Home = () => {
+export const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-10 justify-between items-center w-[360px] md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1200px] m-auto mt-10 md:mt-20">
+    <div
+      className="flex flex-col lg:flex-row gap-10 justify-between items-center w-[360px] md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1200px] m-auto"
+      style={{ height: "calc(100vh - 70px)" }}
+    >
       <motion.div
         className="w-full lg:w-[80%] xl:w-[60%]"
         initial={{ x: -30, opacity: 0 }}

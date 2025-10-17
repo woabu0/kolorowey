@@ -1,7 +1,7 @@
 import React from "react";
-import { Navbar } from "../Navbar/Navbar";
+import { Navbar } from "../sections/Navbar";
 
-export const Errorpage = () => {
+export const Error = () => {
   return (
     <div>
       <Navbar />

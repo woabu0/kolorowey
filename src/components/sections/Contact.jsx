@@ -7,7 +7,7 @@ export const Contact = () => {
     setSelectedJob(event.target.value);
   };
 
-  const [volumeQuantity, setvolumeQuantity] = useState({
+  const [volumeQuantity, setVolumeQuantity] = useState({
     Pageviews: false,
     Visits: false,
     Impressions: false,
@@ -15,14 +15,17 @@ export const Contact = () => {
   });
 
   const handleCheckboxChange = (volumeID) => {
-    setvolumeQuantity((prevQuantities) => ({
+    setVolumeQuantity((prevQuantities) => ({
       ...prevQuantities,
       [volumeID]: !prevQuantities[volumeID],
     }));
   };
 
   return (
-    <div id="contact" className="w-[360px] md:w-[700px] lg:w-[950px] xl:w-[1100px] 2xl:w-[1440px] m-auto">
+    <div
+      id="contact"
+      className="w-[360px] md:w-[700px] lg:w-[950px] xl:w-[1100px] 2xl:w-[1440px] m-auto"
+    >
       <h1 className="text-[30px] text-center my-16">Contact Us</h1>
       <form className="text-[12px] w-[300px] md:w-[610px] m-auto">
         <div className="flex flex-col md:flex-row gap-5 md:gap-0 justify-between items-center">
@@ -31,7 +34,7 @@ export const Contact = () => {
             <input
               type="text"
               placeholder="Enter your Name"
-              className="w-[300px] h-[48px] rounded-lg border-black border-[2px] focus:outline-[#be4dec] px-3"
+              className="w-[300px] h-[48px] rounded-lg border-black border-2 focus:outline-[#be4dec] px-3"
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -39,7 +42,7 @@ export const Contact = () => {
             <input
               type="text"
               placeholder="Enter your Company/Website"
-              className="w-[300px] h-[48px] rounded-lg border-black border-[2px] focus:outline-[#be4dec] px-3"
+              className="w-[300px] h-[48px] rounded-lg border-black border-2 focus:outline-[#be4dec] px-3"
             />
           </div>
         </div>
@@ -49,7 +52,7 @@ export const Contact = () => {
             <input
               type="text"
               placeholder="Enter your Work Email"
-              className="w-[300px] h-[48px] rounded-lg border-black border-[2px] focus:outline-[#be4dec] px-3"
+              className="w-[300px] h-[48px] rounded-lg border-black border-2 focus:outline-[#be4dec] px-3"
             />
           </div>
           <div className="flex flex-col gap-2">
@@ -57,7 +60,7 @@ export const Contact = () => {
             <input
               type="text"
               placeholder="Enter you Phone"
-              className="w-[300px] h-[48px] rounded-lg border-black border-[2px] focus:outline-[#be4dec] px-3"
+              className="w-[300px] h-[48px] rounded-lg border-black border-2 focus:outline-[#be4dec] px-3"
             />
           </div>
         </div>
@@ -68,7 +71,7 @@ export const Contact = () => {
             onChange={handleJobChange}
             name="who"
             id="who"
-            className="w-full h-[48px] rounded-lg border-black border-[2px] focus:outline-[#be4dec] cursor-pointer px-3"
+            className="w-full h-[48px] rounded-lg border-black border-2 focus:outline-[#be4dec] cursor-pointer px-3"
           >
             <option value="">Select who you are</option>
             <option value="Publisher">Publisher</option>
@@ -104,7 +107,7 @@ export const Contact = () => {
                         <input
                           type="number"
                           placeholder="Quantity"
-                          className="w-full h-[48px] rounded-lg border-black border-[2px] focus:outline-[#be4dec] cursor-pointer px-3"
+                          className="w-full h-[48px] rounded-lg border-black border-2 focus:outline-[#be4dec] cursor-pointer px-3"
                         />
                       </div>
                     )}
@@ -115,7 +118,7 @@ export const Contact = () => {
                 <label>Monthly Revenue (USD):</label>
                 <select
                   name="revenues"
-                  className="w-full h-[48px] rounded-lg border-black border-[2px] focus:outline-[#be4dec] cursor-pointer px-3"
+                  className="w-full h-[48px] rounded-lg border-black border-2 focus:outline-[#be4dec] cursor-pointer px-3"
                 >
                   <option value="Less than 1,000 USD">
                     Less than 1,000 USD
@@ -138,7 +141,7 @@ export const Contact = () => {
           <textarea
             name="message"
             placeholder="Enter your Message"
-            className="w-full h-28 rounded-lg border-black border-[2px] focus:outline-[#be4dec] p-3"
+            className="w-full h-28 rounded-lg border-black border-2 focus:outline-[#be4dec] p-3"
           ></textarea>
         </div>
         <div className="mt-5 flex items-center gap-1">

@@ -1,88 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "RocknRoll One";
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 475px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
 }
 
-body {
-  background-color: #f7f7f7;
-}
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 
-#even {
-  flex-direction: row-reverse;
-}
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "RocknRoll One";
+  }
 
-#play,
-#xandr {
-  flex-direction: row-reverse;
-}
+  body {
+    background-color: #f7f7f7;
+  }
 
-#texteven {
-  text-align: end;
-}
-
-@media screen and (max-width: 767px) {
   #even {
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
   }
 
   #play,
   #xandr {
-    flex-direction: column;
+    flex-direction: row-reverse;
   }
 
   #texteven {
-    text-align: center;
+    text-align: end;
   }
-}
 
-.anime-div {
-  position: relative;
-  animation: moveUpDown 0.6s infinite alternate;
-}
+  @media screen and (max-width: 767px) {
+    #even {
+      flex-direction: column-reverse;
+    }
 
-.hover-div:hover {
-  position: relative;
-  animation: moveUpDown 0.6s infinite alternate;
-}
+    #play,
+    #xandr {
+      flex-direction: column;
+    }
 
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0);
+    #texteven {
+      text-align: center;
+    }
   }
-  100% {
-    transform: translateY(-6px);
+
+  .anime-div {
+    position: relative;
+    animation: moveUpDown 0.6s infinite alternate;
   }
-}
 
-.close {
-  display: none;
-}
+  .hover-div:hover {
+    position: relative;
+    animation: moveUpDown 0.6s infinite alternate;
+  }
 
-.open {
-  display: block;
-  position: absolute;
-}
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-6px);
+    }
+  }
 
-.bg-color {
-  background: linear-gradient(70deg, #6754e9, #f277d9, #e41d1d, #d99e00);
-}
+  .close {
+    display: none;
+  }
 
-.text-color {
-  background: -webkit-linear-gradient(
-    70deg,
-    #6754e9,
-    #f277d9,
-    #e41d1d,
-    #d99e00
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  .open {
+    display: block;
+    position: absolute;
+  }
+
+  .bg-color {
+    background: linear-gradient(70deg, #6754e9, #f277d9, #e41d1d, #d99e00);
+  }
+
+  .text-color {
+    background: -webkit-linear-gradient(
+      70deg,
+      #6754e9,
+      #f277d9,
+      #e41d1d,
+      #d99e00
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
